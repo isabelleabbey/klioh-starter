@@ -1,6 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #747474;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 100vh;
+    /* border: 2px solid lightgray; */
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--bright);
+  }
+}
+
 @layer components {
 
   .title-lg {   @apply font-serif text-2xl }

@@ -89,6 +89,15 @@
   .nav-items { @apply flex justify-around items-center uppercase font-normal; }
   .nav-items-col { @apply flex flex-col uppercase }
 
+  /* base list styles */
+  ul {@apply list-disc pl-3}
+  ul li {@apply mb-4 pl-8}
+  ul li:last-child {@apply mb-0}
+
+  ol {@apply list-decimal pl-3 }
+  ol li {@apply mb-4 pl-8}
+  ol li:last-child {@apply mb-0}
+
   /* policy styles */
   .terms p { @apply mb-6 }
   .terms ul { @apply mb-6 }
